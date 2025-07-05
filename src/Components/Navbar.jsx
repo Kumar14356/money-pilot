@@ -5,14 +5,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative overflow-x-hidden">
+    <nav className="relative">
       <div className="flex py-2 items-center justify-between px-10">
         <div className="flex gap-20 items-center">
           <div>
             <img src="/images/logo.png" alt="Logo" />
           </div>
 
-       
           <div className="hidden lg:block">
             <ul className="flex gap-5">
               <li>Business Loans</li>
@@ -53,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md z-50">
           <ul className="flex flex-col gap-3 p-4">
             <li>Business Loans</li>
             <li>Property Loans</li>
@@ -68,4 +67,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;
