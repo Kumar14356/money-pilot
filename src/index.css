@@ -1,0 +1,14 @@
+@font-face {
+    font-family:Inter;
+    src: url("../src/assets/fonts/Inter_18pt-Black.ttf");
+    font-family: Robot;
+    src:url("../src/assets/fonts/Roboto-Black.ttf");
+    
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-Inter:"Inter",sans-serif;
+    --font-Roboto:"Roboto",sans-serif;
+}
